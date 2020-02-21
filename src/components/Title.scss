@@ -1,0 +1,20 @@
+.title-container {
+    align-items: center;
+    background-image: url('../assets/title.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display:flex;
+    width:400px;
+    justify-content: center;
+    position: absolute;
+    right: -100px;
+    top: -140px;
+    h1{
+        font-weight: 100;
+        color: #847777;
+        text-shadow: 2px 1px 2px #ffe10b;
+        font-family: 'Amatic SC', cursive;
+        font-size: 71px;
+    }
+}

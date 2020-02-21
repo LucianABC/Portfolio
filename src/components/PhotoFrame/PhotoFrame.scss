@@ -1,0 +1,34 @@
+.photo-container{
+    box-sizing: border-box;
+    display:flex;
+    position: absolute;
+    left: -100px;
+    top: 200px;
+    width: 240px;
+    height:270px;
+    .polaroid-frame{
+        box-sizing: border-box;
+
+        background-image: url('../../assets/polaroidframe2.png');
+        background-position:center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        width:100%;
+        z-index: 22;
+
+    }
+    .polaroid-photo{
+        display: flex;
+        margin: 27px;
+        margin-top: 22px;
+        margin-bottom: 50px;
+        width: 100%;
+        z-index: 0;
+        overflow: hidden;
+        background-size: cover;
+    }
+}

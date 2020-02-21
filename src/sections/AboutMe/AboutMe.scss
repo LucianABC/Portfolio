@@ -1,0 +1,24 @@
+.about-me{
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin:35px;
+    padding: 15px;
+    width: 100%;
+    .about-me-content{
+        background-image: url('../../assets/paperwallpaper.jpg');
+        background-size: cover;
+        width: 70%;
+        height:80%;
+        margin-top: 100px; 
+        position: relative;
+        p {
+            margin: 15px;
+            padding: 55px;
+            padding-bottom:70px;
+        }
+    }
+}
