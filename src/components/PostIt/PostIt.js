@@ -1,10 +1,16 @@
 import React from 'react';
 import './PostIt.scss';
 
-const PostIt =(props)=>{
+const PostIt =({children, deg, img})=>{
     return(
-        <div className="post-it">
-                {props.children}
+        <div className="post-it" 
+            style={
+                    {transform: `rotate(${deg}deg)`,
+                    backgroundImage: `url(${img})`}
+                }>
+            <p className="post-it-text">
+                {children}
+            </p>
         </div>
     );
 }
