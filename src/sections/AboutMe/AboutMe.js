@@ -71,7 +71,7 @@ const AboutMe = () => {
             }      
         
             <section className="about-me-content">
-                <Title titleContent="About me" rotation={"10"}></Title>
+                <Title titleContent="About me." rotation={"10"}></Title>
                 <p>
                     aca va texto bla bal bal Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate vulputate odio sed mattis.
                     Ut egestas sit amet justo id gravida. In nulla felis, consectetur a turpis quis, sagittis finibus enim. 
