@@ -1,6 +1,8 @@
 .browser {
     box-sizing: border-box;
+    overflow: hidden;
     padding: 30px;
+    position: relative;
     width: 100%;
     .browser-menu {
         align-items: center;

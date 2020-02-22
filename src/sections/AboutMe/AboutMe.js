@@ -9,6 +9,10 @@ import Batman from '../../assets/Stickers/batman.png';
 import Ravenclaw from '../../assets/Stickers/ravenclaw.png';
 import Mike from '../../assets/Stickers/microphone.png';
 import Nirvana from '../../assets/Stickers/nirvana.png';
+import Coding from '../../assets/Stickers/coding.png';
+import BreakfastClub from '../../assets/Stickers/breakfastclub.png';
+import Matrix from '../../assets/Stickers/matrix.png';
+import Orange from '../../assets/Stickers/orange.png';
 
 const AboutMe = () => {
     const Stickers = [
@@ -27,12 +31,33 @@ const AboutMe = () => {
             left: "-78px",
             rotation:"-27deg"
         },
-        
         { img: Nirvana,
             top: " -14px",
             left: "1063px",
             rotation:"45deg"
-        }
+        },        
+        { img: Coding,
+            left: "1100px",
+            top: " 647px",
+            rotation:"43deg"
+        },        
+        { img: BreakfastClub,
+            top: " 947px",
+            left: "20px",
+            rotation:"18deg"
+        },
+        
+        { img: Matrix,
+            top: " 447px",
+            left: "20px",
+            rotation:"18deg"
+        },
+        
+        { img: Orange,
+            top: " 910px",
+            left: "1019px",
+            rotation:"15deg"
+        } 
     ]
     return(
         <section className="about-me section"> 
