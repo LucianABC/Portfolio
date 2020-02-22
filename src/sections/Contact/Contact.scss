@@ -1,6 +1,7 @@
 .cellphone {
     box-sizing: border-box;
     background-image:url('../../assets/cellphone.png');
+    color: #fdfdfd;
     font-family: 'Odibee Sans',sans-serif ;
     height: 563px;
     padding: 16px;
@@ -9,11 +10,50 @@
     width:320px;
     .cellphone-screen{
         align-items: center;
+        box-sizing: border-box;
         background-color: #7470705c;
         display:flex;
+        flex-direction: column;
         height: 423px;
-        justify-content: center;
-        width:288px;        
-
+        justify-content: space-between;
+        width:288px;  
+        padding: 15px;      
+        .cellphone-clock{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            text-shadow: 1px 1px #0000007d;
+            width: 100%;
+            h1{
+                font-size: 44px;
+                font-weight: 400;
+                margin:0;
+            }
+            p{
+                font-weight: 400;
+            }
+        }
+        .cellphone-content{
+            background-color: white;
+            border-radius:3px;
+            box-shadow: 0px 0px 7px 2px #0000007d;
+            box-sizing: border-box;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding: 9px;
+            width:100%;
+            font-size: 22px;
+            p{
+                margin:0;
+            }
+        }
+        
+        .cellphone-buttons {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
     }
 }

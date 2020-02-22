@@ -1,12 +1,16 @@
 import React from 'react';
 import './Icon.scss';
-import '../../Animations/Animations.scss';
+import  '../../../components/Animations/Animations.scss';
+
 
 const Icon =({children, img})=>{
+  
     return(
-        <div className="cellphone-item bounce-top">
-            <img src={img}/>
-             <p> {children} </p>
+        <div className="cellphone-item">
+            <div className="img-container jello-vertical">
+                <img src={img}/>
+            </div>
+            <p> {children} </p>
         </div>
     );
 }

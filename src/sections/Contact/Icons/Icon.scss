@@ -1,20 +1,30 @@
 .cellphone-item{
     align-items: center;
+    color: whitesmoke;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    flex-direction: column;  
     box-sizing: border-box;
-    
     justify-content: center;
     padding: 15px;
-    width: 30%;
+    width: 33%;
     font-size: 20px;
-    img{
-        width: 30px;
+    .img-container{
+        align-items: center;
+        background-color: #fdfdfd;
+        border-radius: 14px;
+        box-shadow: 0px 0px 5px 1px #00000070;
+        justify-content: center;
+        display: flex;
+        margin: 4px;
+        padding: 4px;
+        img{
+            height: 30px;
+        }
     }
     p {
         margin: 0;
+        text-shadow: 1px 1px #0000007d;
     }
     
 }
