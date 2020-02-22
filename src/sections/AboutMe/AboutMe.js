@@ -1,14 +1,50 @@
 import React from 'react';
 import '../Section.scss';
 import './AboutMe.scss';
-
 import Title from '../../components/Title';
+import Sticker from './Sticker/Sticker';
 import PhotoFrame from '../../components/PhotoFrame/PhotoFrame';
 import Photo from '../../assets/foto2.jpg';
+import Batman from '../../assets/Stickers/batman.png';
+import Ravenclaw from '../../assets/Stickers/ravenclaw.png';
+import Mike from '../../assets/Stickers/microphone.png';
+import Nirvana from '../../assets/Stickers/nirvana.png';
 
 const AboutMe = () => {
+    const Stickers = [
+        { img: Mike,
+        top: "341px",
+        left: "1057px",
+        rotation:"27deg" 
+        },
+        { img: Batman,
+            top: " 741px",
+            left: "119px",
+            rotation:"27deg"
+        },
+        { img: Ravenclaw,
+            top: " 137px",
+            left: "-78px",
+            rotation:"-27deg"
+        },
+        
+        { img: Nirvana,
+            top: " -14px",
+            left: "1063px",
+            rotation:"45deg"
+        }
+    ]
     return(
-        <section className="about-me section">           
+        <section className="about-me section"> 
+            {
+            Stickers.map(sticker=> {
+                return (<Sticker img={sticker.img} 
+                                left={sticker.left}
+                                 top={sticker.top}
+                                rotation={sticker.rotation}>
+                                 </Sticker>)  })
+            }      
+        
             <section className="about-me-content">
                 <Title titleContent="About me" rotation={"10"}></Title>
                 <p>
