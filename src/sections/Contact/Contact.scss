@@ -1,11 +1,19 @@
 .cellphone {
+    box-sizing: border-box;
     background-image:url('../../assets/cellphone.png');
-    width:320px;
+    font-family: 'Odibee Sans',sans-serif ;
     height: 563px;
-    .cellphone-item{
-        background-color:white;
-        box-sizing: border-box;
-        height: 70px;
-        padding: 20px;
+    padding: 16px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width:320px;
+    .cellphone-screen{
+        align-items: center;
+        background-color: #7470705c;
+        display:flex;
+        height: 423px;
+        justify-content: center;
+        width:288px;        
+
     }
 }
