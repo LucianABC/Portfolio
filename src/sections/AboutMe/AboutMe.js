@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Section.scss';
 import './AboutMe.scss';
+
 import Title from '../../components/Title';
 import PhotoFrame from '../../components/PhotoFrame/PhotoFrame';
 import Photo from '../../assets/foto2.jpg';

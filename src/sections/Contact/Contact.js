@@ -22,7 +22,7 @@ const Contact = ()=>{
                         <p>saturday <br/> 22.02.2020</p>
                         <h1>16:20</h1>
                     </div>
-                    <div className="cellphone-content">
+                    <div className="cellphone-content scale-in-bottom">
                        <p > Welcome! </p>
                     </div>
                     <div className="cellphone-buttons">
