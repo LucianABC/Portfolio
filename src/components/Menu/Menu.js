@@ -1,47 +1,54 @@
 import React from 'react';
 import {BrowserRouter,
-        Link,
         Switch,
         Route} from 'react-router-dom';
 import './Menu.scss';
 import Contact from '../../sections/Contact/Contact';
 import AboutMe from '../../sections/AboutMe/AboutMe';
 import Projects from '../../sections/Projects/Projects';
+import Links from './Links';
 
 
 const Menu = () => {
     const Sections=[
         {
+            section: null,
+            name: "Home",
+            route: "/"
+        },
+        {
             section: AboutMe,
             name: "About me",
             route: "/about-me"
         },
-        {
-            section: Contact,
-            name: "Contact",
-            route: "/contact"
-        },
         {   section: Projects,
             name:"My projects",
             route: "/my-projects"
+        },
+        {
+            section: Contact,
+            name: "Contact me",
+            route: "/contact"
         }
     ];
     
     return (
         <div className="browser">
             <BrowserRouter>
-                <div className="browser-menu">
-                    {            
-                    Sections.map(section=>{
-                        return (<Link className="menu-item" to= {section.route}>{section.name}</Link>)
-                    })}    
-                </div>
+                <Links sections={Sections}/>
                 <Switch>
-                    {
-                        Sections.map(section=>{
-                            return (<Route path= {section.route} 
-                                    component={section.section}></Route>)
-                        })
+                    <Route exact path= {Sections[0].route} 
+                                    component={Sections[0].section}></Route>)
+
+                    <Route path= {Sections[1].route} 
+                                    component={Sections[1].section}></Route>)
+                       
+                       <Route exact path= {Sections[2].route} 
+                                    component={Sections[2].section}></Route>)
+                    
+                    <Route exact path= {Sections[3].route} 
+                                    component={Sections[3].section}></Route>)
+                    
                     }
                 </Switch>       
             </BrowserRouter>
